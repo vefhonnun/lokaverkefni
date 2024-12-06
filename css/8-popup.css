@@ -1,0 +1,56 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    }
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 9;
+    }
+
+.popup {
+    margin: 5rem auto;
+    padding: 1.5rem;
+    background: var(--nc-bg-1);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    }
+
+.popup h2 {
+    margin-top: 0;
+    color: var(--nc-tx-1);
+    }
+.popup .close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    transition: all 200ms;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--nc-lk-2);
+    }
+.popup .close:hover {
+    color: var(--nc-tx-1);
+    }
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+    }
+
+/* farsímaskjáir - mobile */
+@media screen and (max-width: 700px){
+
+    .popup{
+        width: 80%;
+    }
+}

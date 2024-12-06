@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <meta name="author" content="Nemandi">
+    <title>Verkefni 7. Lokaverkefni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    <!--link rel="stylesheet" href="css/1-new.css">
+    <link rel="stylesheet" href="css/2-grid.css">
+    <link rel="stylesheet" href="css/3-custom.css">
+    <link rel="stylesheet" href="css/4-form.css">
+    <link rel="stylesheet" href="css/5-table.css">
+    <link rel="stylesheet" href="css/6-menues.css">
+    <link rel="stylesheet" href="css/7-accordion.css">
+    <link rel="stylesheet" href="css/8-popup.css">
+    <link rel="stylesheet" href="css/9-chatbox.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/kvikun.css"-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
+</head>
+<body id="top">
+    <section class="menuBg">
+        <div class="menuLogo">21.12.2024</div>
+        <nav>
+            <input type="checkbox" id="inputMenu">
+            <label for="inputMenu" class="labelMenu" id=""> &#9776; </label>
+            <div class="topmenu">
+                <a href="#top"><span class="icon-soulLogo"></span> Soularátíð</a>
+                <a href="#program"><span class="icon-location"></span> Hvar og hvenær</a>
+                <a href="#harmon"><span class="icon-qrcode"></span> Kaupa miða</a>
+                
+                <div class="socialbutts">
+                <a href="#"><span class="icon-facebook2"></span></a>
+                <a href="#"><span class="icon-pinterest"></span></a>
+                <a href="#"><span class="icon-github"></span></a>
+                <a href="#"><span class="icon-vimeo2"></span></a>
+                </div>
+            </div>
+        </nav>
+    </section><!--topmenu end-->
+    <header class="container">
+        <section>
+            <!--img src="images/alien-svgrepo-com.svg" class="logo animate__backInDown"-->
+            <h1><span class="icon-soulLogo"></span> vetrarsoul<wbr>stöðuhátíð</h1>           
+        </section>
+    </header>
+    <section class="container col-2 intro">
+      <section> 
+            <h1>Soulskins<wbr>kórinn</h1>
+            <h1>Stefán Hilmarsson</h1>
+            <h1>GDRN</h1>
+            <h1>Valdemar</h1>
+            <h1>Eivör</h1>
+      </section>
+      <section>               
+        <div class="example"> 
+          <button class="shake buyTicket">Kaupa miða</button>
+              <div id="slideset6">
+                <!--slide 1-->
+               <div>
+                <img src="images/valdi.webp" alt="Valdimar Guðmundsson">
+              </div>
+               <!--slide 2-->
+               <div>
+                <img src="images/stebbi.webp" alt="Stefán Hilmarsson">      
+              </div>
+              <!--slide 3-->
+               <div>
+                <img src="images/gunna.webp" alt="GDRN">      
+              </div>
+              <!--slide 4-->
+              <div>
+                <img src="images/eyvor.webp" alt="Eyvor">      
+              </div>
+            </div>
+            <h2>Á vetrarsólstöðum er hátíð "soul"arinnar haldin í Eldborg til að fagna komu ljóss og friðar. Soulskinskórinn víðfrægi fyllir landann með soul beint í hjartastað. Ásamt kórnum koma okkar bestu "soul"söngvarar og tónlistarfólk! Þetta verður glæsileg veisla og jafnvel jólasveinarnir munu taka sér frí frá sælgætisaustrinum og mæta sem heiðursgestir á hátíðina</h2>
+          <!--img src="images/valdimar-gudmundsson.webp" class="animate__rotateIn"-->
+      </section>
+  </section>
+
+    <section class="container center">
+      <h1>Soulskinskórinn / Sunday Service Choir</h1>
+      <img src="images/soulskinskorinn.webp" alt="Soulskinskórinn">
+      
+      <h4>Soulskinskórinn kom fyrst fram 2019 sem hluti af endurskírn Kanye West.<br> Sólskinskórinn hefur komið fram á hrífandi uppákomum víða um Bandaríkin ásamt rapparanum.<br>Sólskinskórinn er frá Los Angeles og kórstjórinn er Jason White.</h4>
+    </section>
+    <section class="container">
+      <!--
+        https://soundcloud.com/forwhomthebellcurves/kanye-west-ft-sunday-service-5
+        https://soundcloud.com/forwhomthebellcurves
+        https://open.spotify.com/artist/2c9O21YLFy4tFI9zCVhbFg
+      -->
+      <table class="autoflow">
+        <caption>Dagskrá vetrarsoul<wbr>stöðuhátíðarinnar</caption>
+        <thead>
+            <tr>
+                <th style="width:25%">WHO</th>
+                <th style="width:55%">WHERE</th>
+                <th style="width:10%">WHEN</th>
+                <th style="width:10%">CHECK IN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="WHO ">Yui Hirasawa. The great director of Lorem Ipsum</td>
+                <td data-label="WHERE ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse reprehenderit in quia eos, </td>
+                <td data-label="WHEN ">13:00 - 20:00</td>
+                <td data-label="Check In" id="checkin">
+                  <button class="shake">Buy Tickets</button>
+                </td>
+            </tr>
+            <tr>
+              <td data-label="WHO ">Mio Akiyama. The great director of Lorem Ipsum</td>
+              <td data-label="WHERE ">Deleniti ut obcaecati, molestiae, consequuntur fuga quam pariatur odit nesciunt reiciendis error ipsum tenetur nostrum perferendis atque.</td>
+              <td data-label="WHEN ">13:00 - 20:00</td>
+              <td data-label="Check In ">
+                  <button class="shake">Buy Tickets</button>
+                </td>
+            </tr>
+            <tr>
+              <td data-label="WHO ">Ritsu Tainaka. The great director of Lorem Ipsum</td>
+              <td data-label="WHERE ">Sit amet consectetur adipisicing elit. Nesciunt illo et inventore culpa amet deserunt maxime.</td>
+              <td data-label="WHEN ">13:00 - 20:00</td>
+              <td data-label="Check In ">
+                  <button class="shake">Buy Tickets</button>
+                </td>
+            </tr>
+            <tr>
+              <td data-label="WHO ">Tsumugi Kotobuki. The great director of Lorem Ipsum</td>
+              <td data-label="WHERE ">At enim aliquid accusantium laborum atque ipsam quos expedita sint, consequatur sequi autem dicta</td>
+              <td data-label="WHEN ">13:00 - 20:00</td>
+              <td data-label="Check In ">
+                  <button class="shake">Buy Tickets</button>
+                </td>
+            </tr>
+            <tr>
+              <td data-label="WHO ">Azusa Nakano. The great director of Lorem Ipsum</td>
+              <td data-label="WHERE ">At enim aliquid accusantium laborum atque ipsam quos expedita sint, consequatur sequi autem dicta</td>
+              <td data-label="WHEN ">13:00 - 20:00</td>
+              <td data-label="Check In ">
+                  <button class="shake">Buy Tickets</button>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+              <th colspan="4">Footer upplýsingar í einum dálki</th>
+          </tr>
+        </tfoot>
+      </table>
+    </section><!--container end-->
+  </div><!--bgBanner end-->
+  <br>
+
+  <main>
+
+    <section class="col-2" id="harmon">
+      <article>
+        
+
+        <p>&nbsp;</p>
+        <section>
+          <h3>Grallarinn soulmabók</h3>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5CdumLWE2wPFfOreNVH5S5?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <h3>Nánari upplýsingar um flytjendur</h3>
+          <!-- TAB 0 -->
+          <div class="a-tab">
+            <input id="tab-1" name="tab-group" class="a-check" type="radio">
+            <label for="tab-1" class="a-label">Soulskinskórinn</label>
+            <div class="a-content">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.
+              <blockquote><em>Blockqoute</em> Aperiam ratione id sunt, et obcaecati numquam repellat, voluptatum quos repellendus eos reprehenderit nihil laboriosam!</blockquote>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.</p> 
+            </div>
+          </div>
+          <!-- TAB 1 -->
+          <div class="a-tab">
+            <input id="tab-1" name="tab-group" class="a-check" type="radio">
+            <label for="tab-1" class="a-label">Stefán Hilmarsson</label>
+            <div class="a-content">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.
+              <blockquote><em>Blockqoute</em> Aperiam ratione id sunt, et obcaecati numquam repellat, voluptatum quos repellendus eos reprehenderit nihil laboriosam!</blockquote>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.</p> 
+            </div>
+          </div>
+          <!-- TAB 2 -->
+          <div class="a-tab">
+            <input id="tab-2" name="tab-group" class="a-check" type="radio">
+            <label for="tab-2" class="a-label">GDRN</label>
+            <div class="a-content">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.
+              <blockquote><em>Blockqoute</em> Aperiam ratione id sunt, et obcaecati numquam repellat, voluptatum quos repellendus eos reprehenderit nihil laboriosam!</blockquote>
+              </p> 
+            </div>
+          </div>
+          <!-- TAB 3 -->
+          <div class="a-tab">
+            <input id="tab-3" name="tab-group" class="a-check" type="radio">
+            <label for="tab-3" class="a-label">Valdimar</label>
+            <div class="a-content">
+              <blockquote><em>Blockqoute</em> Aperiam ratione id sunt, et obcaecati numquam repellat, voluptatum quos repellendus eos reprehenderit nihil laboriosam!</blockquote>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.</p> 
+            </div>
+          </div>
+          <!-- TAB 4 -->
+          <div class="a-tab">
+            <input id="tab-3" name="tab-group" class="a-check" type="radio">
+            <label for="tab-3" class="a-label">Eivör</label>
+            <div class="a-content">
+              <blockquote><em>Blockqoute</em> Aperiam ratione id sunt, et obcaecati numquam repellat, voluptatum quos repellendus eos reprehenderit nihil laboriosam!</blockquote>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.</p> 
+            </div>
+          </div>
+        </section>
+      </article>
+      <section>
+        <p><em>This is not a real form and does not submit or save any information.</em></p>
+        <form action="takk.html" method="get"><!--method á að vera POST -->
+          <fieldset>
+            <legend>Skráningarform</legend>
+            <section class="col-2">
+              <p>
+                <label>First name</label><br>
+                <input type="text" name="first_name" required placeholder="fornafn">
+              </p>
+              <p>
+                  <label>Last name</label><br>
+                  <input type="text" name="last_name" required placeholder="eftirnafn">
+              </p>
+            </section>
+
+            <p>
+                
+              <section>
+                <label>Gender: </label>
+                <label>
+                  <input type="radio" name="gender" value="Male"> Male |
+                </label> 
+                <label>
+                    <input type="radio" name="gender" value="Female"> Female |
+                </label> 
+                <label>
+                    <input type="radio" name="gender" value="other-none-na"> Bi
+                </label>
+            </section>
+          </p>
+          
+          <section class="col-2">
+            <p>
+              <label>Email</label><br>
+              <input type="email" name="email" required>
+            </p>
+            <p>
+                <label>Phone number</label> <br>
+                <input type="tel" 
+                  name="phone" 
+                  required 
+                  placeholder="7 digits only" 
+                  pattern="\d{3}(?:[\-\s]?)\d{4}">
+            </p>
+            </section>
+            <section class="col-3">
+              <p>
+                  <label>Time</label> <br>
+                  <input type="time" name="Tími">
+              </p>
+              <p>
+                  <label>Date</label> <br>
+                  <input type="date" name="dagsetning">
+              </p>
+              <p>
+                  <label>Country</label> <br>
+                  <select name="Country">
+                      <option>China</option>
+                      <option>India</option>
+                      <option>USA</option>
+                      <option>Indonesia</option>
+                      <option>Brazil</option>
+                      <option value="Ísland">Ísland</option>
+                  </select>
+              </p>
+            </section>
+            <p>
+                <label>Comments</label><br>
+                <textarea rows="5"></textarea>
+            </p>
+            <p>
+                <label>
+                  <input type="checkbox" value="terms">
+                    I agree to the <a>terms and conditions</a>
+                </label>
+            </p>
+            <p>
+                <button>Sign up</button>
+                <!--button type="reset">Reset form</button-->
+                <button disabled="disabled">Disabled</button>
+            </p>
+          </fieldset>
+        </form>
+        <h6>Undirmálstexti H6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.</h6>
+      </section>
+    </section>
+  </main>
+  <footer class="col-3">
+    <nav>
+      <p>Hér eru val-eiginleikar (Attribute Selectors) í CSS</p>
+      <ul class="downlist">
+        <li><a href="#.pdf" class="download">PDF Document</a></li>
+        <li><a href="#.doc" class="download">Word Document</a></li>
+        <li>Vafrinn finnur hvaða endingu tengillinn er að vísa í og bætir við táknmynd</li>
+      </ul>
+    </nav>
+    <nav>
+      <p>Hér eru fleiri val-eiginleikar</p>
+      <ul class="downlist">
+        <li><a href="#.jpg" class="download">Image File</a></li>
+        <li><a href="#.mp3" class="download">Audio File</a></li>
+        <li><a href="#.mp4" class="download">Video File</a></li>
+        <li><a href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/">Sjá nánar hér</a></li>
+      </ul>
+    </nav>
+    <dl>              <!--Description list -->
+      <dt>Nafn</dt>
+        <dd><span class="icon-g-logo2"></span>uðmundur</dd>
+      <dt>Tölvupóstur</dt>
+        <dd><span class="icon-g-logo2"></span>@tskoli.is</dd>
+      <dt>Vefhönnun</dt>
+        <dd>VEFÞ2VHB5AU, tölvubraut Tækniskólans</dd>
+    </dl>
+  </footer>
+    <p class="center">&copy GJG. 2024, 2 spönn, haust 2024.</p>
+        <!--tilkynningar-->
+        <div id="scroll-container">
+          <a href="#ad1" title="Book Now or Never!">
+              <h2 id="scroll-text1">Látum ljóðið flæða um sálina! </h2>
+          </a>
+          <a href="#ad2" title="Book Now number 2!">
+              <h2 id="scroll-text2">Frábærir söngvarar og tónlistarfólk!  
+          </a>
+          <a href="#ad3" title="Book Now number three!">
+              <h2 id="scroll-text3">Soul, soul skín á mig!</h2>
+          </a>
+      </div>
+  <!--pop up login form-->
+  <div id="login" class="overlay">
+    <div class="popup">
+        <h2>Velkomin/n</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <form action="takk.html" method="get">
+              <fieldset>
+                <legend>Innskráning</legend>
+                <p>Notendanafn: <input type="text" name="user" required placeholder="User"></p>
+                <p>Lykilorð: <input type="password" name="psw" required placeholder="Password"></p>
+                <p><input type="submit" value="Innskráning"></p>
+              </fieldset>
+            </form>
+        </div>
+    </div>
+  </div>
+  <!--Spjallbox-->
+  <label for="inputcheck" class="chatbutt"><span class="icon-bubbles4"></span></label>
+  <input type="checkbox" id="inputcheck">
+  <section class="chatbox">
+    <form action="takk.html" method="get"> 
+      <fieldset> 
+        <legend>&nbsp;Spjallbox&nbsp;</legend><!--ath-->
+        <label>Nafn:</label>
+        <input type="text" placeholder="Name" name="Nafn" required>
+        <br><label>Tölvupóstur:</label>
+        <input type="email" name="TP" placeholder="Email" required>
+        <br><label>Skilaboð:</label>
+        <textarea rows='5' name="skilaboð" placeholder="Message" required></textarea>
+        <p><input type="submit" value="Senda" class="button-primary"></p>
+      </fieldset>
+      </form>
+  </section>
+
+
+
+</body>
+</html>

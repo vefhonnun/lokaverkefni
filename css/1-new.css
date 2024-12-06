@@ -1,0 +1,318 @@
+:root {
+	--nc-font-sans: "Roboto Condensed", sans-serif; /*leturgerð sótt af fonts.google.com */
+	--nc-font-mono: Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono', 'Courier New', Courier, monospace;
+
+	/* Light theme */
+	--nc-tx-1: rgb(36, 41, 46);	/* H1-H6 */
+	--nc-tx-2: rgb(36, 41, 46);	/* Body text */
+	--nc-bg-1: rgb(250, 110, 63); 	/* Bakgrunnur 1 body*/
+	--nc-bg-2: rgb(250, 110, 63);	/* Bakgrunnur 2 header*/
+	--nc-bg-3: #a9a29d;			/* Bakgrunnur 3 (border line form, ofl)*/
+	--menubg: rgb(238, 211, 196);	/* Bakgrunnur topmenu og töflu */
+	--nc-lk-1: rgb(43, 17, 9);		/* A (link) */
+	--nc-lk-v: rgb(126, 39, 10);	/* A (visited) */
+	--nc-lk-2: #ff4f69;			/* A (hover, active) */
+	--nc-lk-tx: #FFFFFF;			/* Button + input type */
+	--nc-ac-1: rgb(67, 20, 5);		/* Bakgrunnur selection + mark + custom*/
+	--nc-ac-tx: #ffdbc7;			/* Selection + mark*/
+	--val-bg: rgb(235, 141, 104); 	/* Nýr litur í button */
+	--table-bg: rgba(255,255,255, .4); /* 2th litur í tr */
+
+	/* Dark theme */
+	--nc-d-tx-1: rgb(250, 110, 63);
+	--nc-d-tx-2: #eeeeee;
+	--nc-d-bg-1: rgb(36, 41, 46);
+	--nc-d-bg-2: rgb(36, 41, 46);
+	--nc-d-bg-3: #4e4e4e;
+	--menu-d-bg: rgba(0,0,0, .3);	
+	--nc-d-lk-1: rgb(235, 141, 104);
+	--nc-d-lk-v: #e0e0e0;
+	--nc-d-lk-2: #ff4f69;
+	--nc-d-lk-tx: #0c0b0b;
+	--nc-d-ac-1: rgb(250, 110, 63);
+	--nc-d-ac-tx: #FFFFFF;
+	--val-d-bg: rgb(250, 110, 63);
+	--table-d-bg: rgba(0,0,0, .5);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--nc-tx-1: var(--nc-d-tx-1);
+		--nc-tx-2: var(--nc-d-tx-2);
+		--nc-bg-1: var(--nc-d-bg-1);
+		--nc-bg-2: var(--nc-d-bg-2);
+		--nc-bg-3: var(--nc-d-bg-3);
+		--nc-lk-1: var(--nc-d-lk-1);
+		--nc-lk-2: var(--nc-d-lk-2);
+		--nc-lk-v: var(--nc-d-lk-v);
+		--nc-lk-tx: var(--nc-d-lk-tx);
+		--nc-ac-1: var(--nc-d-ac-1);
+		--nc-ac-tx: var(--nc-d-ac-tx);
+		--val-bg: var(--val-d-bg);
+		--table-bg: var(--table-d-bg);
+		--menubg: var(--menu-d-bg);
+	}
+}
+
+* {
+	/* Reset margins and padding */
+	margin: 0;
+	padding: 0;
+}
+
+address,
+area,
+article,
+aside,
+audio,
+blockquote,
+datalist,
+details,
+dl,
+fieldset,
+figure,
+form,
+input,
+iframe,
+img,
+meter,
+/*nav,*/
+ol,
+optgroup,
+option,
+output,
+p,
+pre,
+progress,
+ruby,
+/*section,*/
+table,
+textarea,
+ul,
+video {
+	/* Margins for most elements */
+	margin-bottom: 1rem;
+}
+html {
+	scroll-behavior: smooth;
+}
+html,input,select,button {
+	/* Set body font family and some finicky elements */
+	font-family: var(--nc-font-sans);
+}
+
+body {
+	background: var(--nc-bg-1);
+	/* Main body text */
+	color: var(--nc-tx-2);
+	font-size: 1rem;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+
+::selection {
+	/* Set background color for selected text */
+	background: var(--nc-ac-1);
+	color: var(--nc-ac-tx);
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: var(--nc-tx-1);
+	padding-top: .875rem;
+	letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 800;
+	line-height: 1.2;
+	color: var(--nc-tx-1);
+	padding-bottom: 2px;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+}
+
+h4,
+h5,
+h6 {
+	line-height: 1.4;
+	margin-bottom: .3rem;
+}
+
+h1 {
+	font-size: 2.25rem;
+}
+
+h2 {
+	font-size: 1.85rem;
+}
+
+h3 {
+	font-size: 1.55rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+}
+
+h5 {
+	font-size: 1rem; /* ath */
+}
+
+h6 {
+	font-size: .875rem;
+}
+
+a {
+	color: var(--nc-lk-1);
+}
+
+a:hover {
+	color: var(--nc-lk-2);
+}
+
+abbr:hover {
+	/* Set the '?' cursor while hovering an abbreviation */
+	cursor: help;
+}
+
+blockquote {
+	padding: 1.5rem;
+	background: var(--table-bg);
+	border-left: 5px solid var(--nc-bg-3);
+}
+
+abbr {
+	cursor: help;
+}
+
+blockquote *:last-child {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+a img {
+	margin-bottom: 0px;
+}
+
+code,
+samp,
+kbd,
+pre {
+	/* Set the font family for monospaced elements */
+	font-family: var(--nc-font-mono);
+	/* The main preformatted style. This is changed slightly across different cases. */
+	background: var(--nc-bg-2);
+	border: 1px solid var(--nc-bg-3);
+	border-radius: 4px;
+	padding: 3px 6px;
+	/* ↓ font-size is relative to containing element, so it scales for titles*/
+	font-size: 0.9em;
+}
+
+kbd {
+	/* Makes the kbd element look like a keyboard key */
+	border-bottom: 3px solid var(--nc-bg-3);
+}
+
+pre {
+	padding: 1rem 1.4rem;
+	max-width: 100%;
+	overflow: auto;
+}
+
+pre code {
+	/* When <code> is in a <pre>, reset it's formatting to blend in */
+	background: inherit;
+	font-size: inherit;
+	color: inherit;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+code pre {
+	/* When <pre> is in a <code>, reset it's formatting to blend in */
+	display: inline;
+	background: inherit;
+	font-size: inherit;
+	color: inherit;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+details {
+	/* Make the <details> look more "clickable" */
+	padding: .6rem 1rem;
+	background: var(--nc-bg-2);
+	border: 1px solid var(--nc-bg-3);
+	border-radius: 4px;
+}
+
+summary {
+	/* Makes the <summary> look more like a "clickable" link with the pointer cursor */
+	cursor: pointer;
+	font-weight: bold;
+}
+
+details[open] {
+	/* Adjust the <details> padding while open */
+	padding-bottom: .75rem;
+}
+
+details[open] summary {
+	/* Adjust the <details> padding while open */
+	margin-bottom: 6px;
+}
+
+details[open]>*:last-child {
+	/* Resets the bottom margin of the last element in the <details> while <details> is opened. This prevents double margins/paddings. */
+	margin-bottom: 0;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd::before {
+	/* Add an arrow to data table definitions */
+	content: '→ ';
+}
+
+hr {
+	/* Reset the border of the <hr> separator, then set a better line */
+	border: 0;
+	border-bottom: 1px solid var(--nc-bg-3);
+	margin: 1rem auto;
+}
+
+
+ol,
+ul {
+	/* Replace the browser default padding */
+	padding-left: 2rem;
+}
+
+li {
+	margin-top: .4rem;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+	margin-bottom: 0;
+}
+
+mark {
+	padding: 3px 6px;
+	background: var(--nc-ac-1);
+	color: var(--nc-ac-tx);
+}
+
+img {
+	max-width: 100%;
+	height:auto;
+}

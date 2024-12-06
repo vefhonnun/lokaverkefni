@@ -1,0 +1,73 @@
+table {
+	/* border-collapse sets the table's elements to share borders, rather than floating as separate "boxes". */
+	border-collapse: collapse;
+	width: 100%;
+    border: 1px solid var(--nc-bg-3);
+}
+
+td,
+th {
+	text-align: left;
+	padding: .5rem;
+}
+
+th {
+	background: var(--table-bg);
+}
+
+tr:nth-child(even) {
+	/* Set every other cell slightly darker. Improves readability. */
+	background: var(--table-bg);
+}
+/*
+tbody > tr:nth-child(1) { width:20%; color:yellow}
+tbody > tr:nth-child(2) { color:red; width:400px; }
+tbody > tr:nth-child(3) { width:20%; }
+tbody > tr:nth-child(4) { width:20%; }
+*/
+
+table caption {
+	font-weight: 500;
+    font-size: 1.5rem;
+	margin: 1rem 0 .5rem 0;
+}
+
+textarea {
+	/* Don't let the <textarea> extend off the screen naturally or when dragged by the user */
+	max-width: 100%;
+}
+tfoot th{
+	max-width: 100%;
+	text-align: center;
+}
+/* RWD Smitty töfluhönnnun */
+
+@media screen and (max-width: 37.5rem) { /* 600px */
+	table thead {
+	  border: none;
+	  clip: rect(0 0 0 0);
+	  height: 1px;
+	  margin: -1px;
+	  overflow: hidden;
+	  padding: 0;
+	  position: absolute;
+	  width: 1px;
+	}
+	/*
+	table tr {
+	  border-bottom: 3px solid #ddd;
+	  display: block;
+	}
+	*/
+	table td {
+	  border-bottom: 1px solid #ddd; /*ath*/
+	  display: block;
+	  text-align: right;
+	}
+	
+	table td::before {
+	  content: attr(data-label);
+	  float: left;
+	  font-weight: 700;
+	}
+  }

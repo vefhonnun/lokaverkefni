@@ -1,0 +1,120 @@
+#inputMenu {
+    display: none; 
+}
+.labelMenu {
+    position:fixed;
+    top:.5rem;
+    right: .5rem;
+    display: block;
+    width: 1.4rem;
+    font-size: 1.5rem;
+    border: 1px solid var(--nc-tx-2);
+    border-radius: 4px;
+    padding: .2rem .4rem;
+    background-color: var(--table-bg);
+    z-index: 8;
+}
+.topmenu {
+    position:fixed;
+    top: 3rem;
+    right: -46rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--menubg);
+    width:75%;
+    transition: all .5s ease-out;
+    border-radius: 4px;
+    z-index: 7;
+}
+.topmenu a:link {
+    display: block;
+    padding: .5rem 3rem;
+    color: var(--nc-tx-2);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid var(--nc-tx-2);
+}
+.topmenu a:visited {
+    color: var(--nc-lk-v);
+}
+.topmenu a:hover, .topmenu a:active{
+    background-color: var(--table-bg);
+}
+.topmenu a:last-child {
+    border: 0;
+}
+#inputMenu:checked ~ .topmenu {
+    right: 3rem;
+    transition: all .5s ease-in;
+}
+.menuBg p {
+    margin: 0;
+    padding: .4rem 2rem;
+    margin: 9;
+    letter-spacing: .1em;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--nc-bg-2);
+}
+.socialbutts {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.socialbutts a:link {
+    padding: .5rem 1rem;
+    border: 0;
+}
+.downlist {
+    list-style-type: none;
+}
+.download {
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    padding-left: 22px;
+    text-decoration: none;
+  }
+.download[href$=".pdf"] {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/pdf.png");
+}
+.download[href$=".doc"] {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/doc.png");
+}
+.download[href$=".jpg"] {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/image.png");
+}
+.download[href$=".mp3"] {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/audio.png");
+}
+.download[href$=".mp4"] {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/video.png");
+}
+/* viðmið */
+@media screen and (min-width:60rem){
+    .menuBg {
+     display: grid;
+        flex-flow: row;
+        /*   
+        grid-template-columns: 1fr 5.25fr;
+        background-color: var(--menubg); */
+        margin: 0;
+    }
+    .menuBg p {
+        background-color: transparent;
+    }
+    .topmenu {
+        position: relative;
+        top:0;
+        right: 0;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end; 
+    }
+    .topmenu a:link {
+        border-bottom: 0;
+    }
+    .labelMenu {
+        display: none;
+    }
+}
